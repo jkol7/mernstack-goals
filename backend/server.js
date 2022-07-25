@@ -16,6 +16,7 @@ app.use(errorHandler)
 
 
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.listen(PORT, () => console.log(`Server started on ${PORT}`))
 console.log('Hello world')
